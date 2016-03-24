@@ -1,7 +1,8 @@
 ## Strings
 
 ### Creating Strings
-**String - ** Formally, a String is a sequence of characters representing a literal constant or some type of variable. Informally, a string is programming lingo for text.  We've worked with numbers, both integers and decimal numbers, to drive parameters and we can do the same with text.
+**String -** Formally, a String is a sequence of characters representing a literal constant or some type of variable. Informally, a string is programming lingo for text.  We've worked with numbers, both integers and decimal numbers, to drive parameters and we can do the same with text.
+
 | Icon | Name | Syntax| Inputs | Outputs |
 | --- | --- | --- | --- | --- |
 | ![](../images/icons/Dynamo-Nodes-StringInput-Large.png) | String | String | Text Box | string |
