@@ -79,7 +79,8 @@ While the code block methods above may take some getting used to, there is a fea
 To show the power of code block, we are going to translate an existing attractor field definition into code block form.  Working with an existing definition demonstrates how code block relates to visual scripting, and is helpful for learning DesignScript syntax.
 ![Exercise](images/7-2/Exercise/01.png)
 > Begin by recreating the definition in the image above (or by opening the sample file).
-1. Notice that the lacing on *Point.ByCoordinates* has been set to *Cross Product*.
+
+>1. Notice that the lacing on *Point.ByCoordinates* has been set to *Cross Product*.
 2. Each point in a grid is moved up in the Z direction based on its distance to the reference point.
 3. A surface is recreated and thickened, creating a bulge in the geometry relative to the distance to the reference point.
 

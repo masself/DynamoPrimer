@@ -45,7 +45,7 @@ The **Display.ByGeometry** Node gives us the ability to color geometry in the Dy
 
 
 ###Color Exercise
->Download the example file that accompanies this exercise (Right click and "Save Link As..."): [Building Blocks of Programs - Color.dyn](datasets/4-5/Building Blocks of Programs - Color.dyn). A full list of example files can be found in the Appendix.
+> Download the example file that accompanies this exercise (Right click and "Save Link As..."): [Building Blocks of Programs - Color.dyn](datasets/4-5/Building Blocks of Programs - Color.dyn). A full list of example files can be found in the Appendix.
 
 This exercise focuses on controlling color parametrically in parallel with geometry. The geometry is a basic helix, which we define below using the **Code Block** (3.2.3). This is a quick and easy way to create a parametric function; and since our focus is on color (rather than geometry), we use the code block to efficiently create the helix without cluttering the canvas.  We will use the code block more frequently as the primer moves to more advanced material.
 
@@ -113,11 +113,12 @@ The **Display.BySurfaceColors** node gives us the ability to map data across a s
 
 
 ###Color on Surfaces Exercise
->Download the example file that accompanies this exercise (Right click and "Save Link As..."): [Building Blocks of Programs - ColorOnSurface.zip](datasets/4-5/BuildingBlocks of Programs - ColorOnSurface.zip). A full list of example files can be found in the Appendix.
+> Download the example file that accompanies this exercise (Right click and "Save Link As..."): [Building Blocks of Programs - ColorOnSurface.zip](datasets/4-5/BuildingBlocks of Programs - ColorOnSurface.zip). A full list of example files can be found in the Appendix.
 
 ![](images/4-5/4-5-5/13.png)
 > First, we need to create (or reference) a surface to use as an input for the **Display.BySurfaceColors** node. For this example we are lofting between a sine and cosine curve.
-1. This **Group** of nodes is creating points along the Z-axis then displacing them based on sine and cosine functions. The two point lists are then used to generate NURBS curves.
+
+>1. This **Group** of nodes is creating points along the Z-axis then displacing them based on sine and cosine functions. The two point lists are then used to generate NURBS curves.
 2. **Surface.ByLoft**: generate an interpolated surface between the list of NURBS curves.
 
 
@@ -129,4 +130,4 @@ The **Display.BySurfaceColors** node gives us the ability to map data across a s
 5. **Display.BySurfaceColors**: map array of color values across surface along X and Y respectively  
 
 ![](images/4-5/4-5-5/15.PNG)
->Close-up preview of the output surface with resolution of 400x300 samples
+> Close-up preview of the output surface with resolution of 400x300 samples

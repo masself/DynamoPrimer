@@ -28,12 +28,14 @@ With the three images above in mind, let's dive into an exercise which selects e
 
 ### Exercise
 >Download the example files that accompanies this exercise (Right click and "Save Link As..."). A full list of example files can be found in the Appendix.
-1. [Selecting.dyn](datasets/8-2/Selecting.dyn)
+
+>1. [Selecting.dyn](datasets/8-2/Selecting.dyn)
 2. [ARCH-Selecing-BaseFile.rvt](datasets/8-2/ARCH-Selecting-BaseFile.rvt)
 
 ![Exercise](images/8-2/Exercise/12.png)
 > In this example Revit file, we have three element types of a simple building.  We're going to use this as an example for selecting Revit elements within the context of the Revit hierachy:
-1. Building Mass
+
+>1. Building Mass
 2. Trusses (Adaptive Components)
 3. Beams (Structural Framing)
 

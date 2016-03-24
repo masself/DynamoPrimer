@@ -102,13 +102,11 @@ And manging with nested lists is a similar process. Be aware of the list order a
 In this exercise, we will flex our new shorthand skills to create a funky-cool eggshell surface defined by ranges and formulas. During this exercise, notice how we use code block and existing Dynamo nodes in tandem: we use the code block for the heavy data lifting while the Dynamo nodes are visually laid out for legibility of the definition.
 
 ![Exercise](images/7-3/Exercise/13.png)
-> Start by creating a surface by connecting the nodes above.  Instead of using a number node to define width and length, double click on the canvas and type ```100;
-``` into a code block.
+> Start by creating a surface by connecting the nodes above.  Instead of using a number node to define width and length, double click on the canvas and type ```100;``` into a code block.
 
 
 ![Exercise](images/7-3/Exercise/12.png)
->1. Define a range between 0 and 1 with 50 divisions by typing ```0..1..#50
-``` into a code block.
+>1. Define a range between 0 and 1 with 50 divisions by typing ```0..1..#50``` into a code block.
 2. Connect the range into *Surface.PointAtParameter*, which takes *u* and *v* values between 0 and 1 across the surface.  Remember to change the *Lacing* to *Cross Product* by right clicking on the *Surface.PointAtParameter* node.
 
 

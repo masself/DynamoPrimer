@@ -69,12 +69,14 @@ In this exercise, we're going to use methods of querying and manipulating string
 
 ![Split String](images/4-4/4-4-4/03.png)
 >Now, we want to drive home the repetition of the stanza by merging the two lines together.  When viewing the output of the previous step, we notice that there are two items in the list:
-1. Using two List.GetItemAtIndex Nodes, we can isolate the items using the values of 0 and 1 as the index input.
+
+>1. Using two List.GetItemAtIndex Nodes, we can isolate the items using the values of 0 and 1 as the index input.
 2. The output for each Node gives us, in order, the final two lines.
 
 ![Split String](images/4-4/4-4-4/04.png)
 >To merge these two items into one, we use the String.Join Node:
-1. After adding the String.Join Node, we notice that we need a separator.
+
+>1. After adding the String.Join Node, we notice that we need a separator.
 2. To create the separator, we add a string node to the canvas and type in a comma.
 3. The final output has merged the last two items into one.
 

@@ -28,13 +28,11 @@ The image below is the base graph we will be using to demonstrate basic list ope
 >Download the example file that accompanies this exercise (Right click and "Save Link As..."): [List-Operations.dyn](datasets/6-2/List-Operations.dyn). A full list of example files can be found in the Appendix.
 
 ![Exercise](images/6-2/Exercise/40.png)
-> 1. Begin with a *code block* with a value of ```500;
-```
+> 1. Begin with a *code block* with a value of ```500;```
 2. Plug into the *x* input of a *Point.ByCoordinates* node.
 3. Plug the node from the previous step into the origin input of a *Plane.ByOriginNormal* node.
 4. Using a *Circle.ByPlaneRadius* node, plug the node from the previous step into the plane input.
-5. Using *code block*, designate a value of ```50;
-``` for the *radius*.  This is the first circle we'll create.
+5. Using *code block*, designate a value of ```50;``` for the *radius*.  This is the first circle we'll create.
 6. With a *Geometry.Translate* node, move the circle up 100 units in the Z direction.
 7. With a *code block* node, define a range of ten numbers between 0 and 1 with this line of code: ```0..1..#10;```
 8. Plug the code block from the previous step into the *param* input of two *Curve.PointAtParameter* nodes.  Plug *Circle.ByPlaneRadius* into the curve input of the top node, and *Geometry.Translate* into the curve input of the node beneath it.
@@ -55,7 +53,7 @@ The image below is the base graph we will be using to demonstrate basic list ope
 
 ###List.GetItemAtIndex
 ![index](images/6-2/index.png)
-> *List.GetItemAtIndex* is a fundamental way to query an item in the list.  In the image above, we are using an index of *"2"* to query the point labeled* "C"*.
+> *List.GetItemAtIndex* is a fundamental way to query an item in the list.  In the image above, we are using an index of *"2"* to query the point labeled *"C"*.
 
 #### Exercise - List.GetItemAtIndex
 >Download the example file that accompanies this exercise (Right click and "Save Link As..."): [List-GetItemAtIndex.dyn](datasets/6-2/List-GetItemAtIndex.dyn). A full list of example files can be found in the Appendix.
@@ -101,8 +99,9 @@ The image below is the base graph we will be using to demonstrate basic list ope
 
 ![Exercise](images/6-2/Exercise/30.png)
 > In order to create a list of values reading "true" or "false", we need to a little more work...
-1. Using a *code block*, define an expression with the syntax: ```0..List.Count(list);
-```. Connect the *Curve.PointAtParameter* node to the *list* input.  We'll walk through this setup more in the code block chapter, but the line of code in this case is giving us a list representing each index of the *Curve.PointAtParameter* node.
+
+>1. Using a *code block*, define an expression with the syntax: ```0..List.Count(list);```.
+2. Connect the *Curve.PointAtParameter* node to the *list* input.  We'll walk through this setup more in the code block chapter, but the line of code in this case is giving us a list representing each index of the *Curve.PointAtParameter* node.
 3. Using a *"%"* (modulus) node, connect the output of the *code block* into the *x* input, and a value of *4* into the *y* input.  This will give us the remainder when dividing the list of indices by 4.  Modulus is a really helpful node for pattern creation.  All values will read as the possible remainders of 4: 0, 1, 2, 3.
 4. From the *modulus* node, we know that a value of 0 means that the index is divisible by 4 (0,4,8,etc...). By using a *"=="* node, we can test for the divisibility by testing it against a value of *"0"*.
 5. The *Watch* node reveals just this: we have a true/false pattern which reads: *true,false,false,false...*.
