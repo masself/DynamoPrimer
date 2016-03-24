@@ -21,6 +21,7 @@ The ```'null'``` type represents the absence of data. While this is an abstract 
 When we are Visual Programming, we can very quickly generate a lot of data and require a means of managing its hierarchy. This is the role of Data Structures, the organizational schemes in which we store data. The specifics of Data Structures and how to use them vary from programming language to programming language. In Dynamo, we add hierarchy to our data through Lists. We will explore this in depth in later chapters, but let's start simply:
 
 A list represents a collection of items placed into one structure of data:
+
 * I have five fingers (*items*) on my hand (*list*).
 * There are ten houses (*items*) on my street (*list*).
 
