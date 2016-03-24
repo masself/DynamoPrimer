@@ -73,10 +73,14 @@ sphereRadius=inputPt.Z;
 ![Exercise](images/7-4/Exercise/05.png)
 > Let's create actual spheres now by editing the *Parent* function.
 1. We first define a sphere with the line of code:
-```sphere=Sphere.ByCenterPointRadius(inputPt,sphereRadius);
 ```
-2. Next, we change the return value to be the *sphere* instead of the *sphereRadius*: ```return = sphere;
-```.  This gives us some giant spheres in our Dynamo preview!
+sphere=Sphere.ByCenterPointRadius(inputPt,sphereRadius);
+```
+2. Next, we change the return value to be the *sphere* instead of the *sphereRadius*:
+```
+return = sphere;
+```
+This gives us some giant spheres in our Dynamo preview!
 
 
 ![Exercise](images/7-4/Exercise/04.png)
@@ -105,9 +109,10 @@ sphereRadius=inputPt.Z/radiusRatio;
 sphere=Sphere.ByCenterPointRadius(inputPt,sphereRadius);
 //Define output for function
 return = sphere;
-};```
-2. Update the children code blocks by adding a *ratio* variable to the input: ```sphereByZ(Pt,ratio);
+};
 ```
+
+2. Update the children code blocks by adding a *ratio* variable to the input: ```sphereByZ(Pt,ratio);```
 Plug a slider into the newly created code block input and vary the size of the radii based on the radius ratio.
 
 

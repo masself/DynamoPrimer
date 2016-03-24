@@ -64,18 +64,10 @@ There are a few basic shorthand methods in the code block which, simply put, mak
 ### Ranges
 The method for defining ranges and sequences can be reduced to basic shorthand.  Use the image below as a guide to the ".." syntax for defining a list of numerical data with code block. After getting the hang of this notation, creating numerical data is a really efficient process:
 ![Obsolete Ranges](images/7-3/obsolete02.png)
-> 1. In this example, a number range is replaced by basic code block syntax defining the ```beginning..end..step-size;
-```.  Represented numerically, we get: ```0..10..1;
-```
-2. Notice that the syntax ```0..10..1;
-``` is equivalent to ```0..10;
-```.  A step-size of 1 is the default value for the shorthand notation. So ```0..10;
-``` will give a sequence from 0 to 10 with a step-size of 1.
-3. The *number sequence* example is similar, except we use a *"#"* to state that we want 15 values in the list, rather than a list which goes up to 15.  In this case, we are defining: ```beginning..#ofSteps..step-size:
-```.  The actual syntax for the sequence is ```0..#15..2
-```
-4. Using the *"#"* from the previous step, we now place it in the *"step-size"* portion of the syntax.  Now, we have a *number range* spanning from the *"beginning"* to the *"end"* and the *"step-size"* notation evenly distributes a number of values between the two: ```beginning..end..#ofSteps
-```
+> 1. In this example, a number range is replaced by basic code block syntax defining the ```beginning..end..step-size;``` .  Represented numerically, we get: ```0..10..1;```
+2. Notice that the syntax ```0..10..1;``` is equivalent to ```0..10;``` .  A step-size of 1 is the default value for the shorthand notation. So ```0..10;``` will give a sequence from 0 to 10 with a step-size of 1.
+3. The *number sequence* example is similar, except we use a *"#"* to state that we want 15 values in the list, rather than a list which goes up to 15.  In this case, we are defining: ```beginning..#ofSteps..step-size:``` .  The actual syntax for the sequence is ```0..#15..2```
+4. Using the *"#"* from the previous step, we now place it in the *"step-size"* portion of the syntax.  Now, we have a *number range* spanning from the *"beginning"* to the *"end"* and the *"step-size"* notation evenly distributes a number of values between the two: ```beginning..end..#ofSteps```
 
 ### Advanced Ranges
 Creating advanced ranges allows us to work with list of lists in a simple fashion.  In the examples below, we're isolating a variable from the primary range notation, and creating another range of that list.
@@ -135,24 +127,20 @@ In this exercise, we will flex our new shorthand skills to create a funky-cool e
 >1. By changing the sliders (ranging from 0 to 10), we get some interesting results.
 
 ![Exercise](images/7-3/Exercise/09.png)
->1. By doing a transpose on the number range, we reverse the direction of the curtain wave: ```transposeList = List.Transpose(sineList);
-```
+>1. By doing a transpose on the number range, we reverse the direction of the curtain wave: ```transposeList = List.Transpose(sineList);```
 
 ![Exercise](images/7-3/Exercise/07.png)
->1. We get a distorted eggshell surface when we add the sineList and the tranposeList: ```eggShellList = sineList+transposeList;
-```
+>1. We get a distorted eggshell surface when we add the sineList and the tranposeList: ```eggShellList = sineList+transposeList;```
 
 ![Exercise](images/7-3/Exercise/05.png)
 >1. Changing the sliders again let's us calm the waters of this algorithm.
 
 ![Exercise](images/7-3/Exercise/04.png)
->1. Last, let's query isolated parts of the data with the code block.  To regenerate the surface with a specific range of points, add the code block above between the *Geometry.Translate* and *NurbsSurface.ByPoints* node.  This has the line of text: ```sineStrips[0..15..1];
-```.  This will select the first 16 rows of points (out of 50).  Recreating the surface, we can see that we've generated an isolated portion of the grid of points.
+>1. Last, let's query isolated parts of the data with the code block.  To regenerate the surface with a specific range of points, add the code block above between the *Geometry.Translate* and *NurbsSurface.ByPoints* node.  This has the line of text: ```sineStrips[0..15..1];``` .  This will select the first 16 rows of points (out of 50).  Recreating the surface, we can see that we've generated an isolated portion of the grid of points.
 
 
 ![Exercise](images/7-3/Exercise/03.png)
->1. In the final step, to make this code block more parametric, we drive the query by using a slider ranging from 0 to 1. We do this with this line of code: ```sineStrips[0..((List.Count(sineStrips)-1)*u)];
-```.  This may seem confusing, but the line of code gives us a quick way to scale the length of the list into a multiplier between 0 and 1.
+>1. In the final step, to make this code block more parametric, we drive the query by using a slider ranging from 0 to 1. We do this with this line of code: ```sineStrips[0..((List.Count(sineStrips)-1)*u)];``` .  This may seem confusing, but the line of code gives us a quick way to scale the length of the list into a multiplier between 0 and 1.
 
 
 ![Exercise](images/7-3/Exercise/02.png)

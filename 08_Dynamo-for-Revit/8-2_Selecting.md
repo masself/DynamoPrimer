@@ -83,9 +83,7 @@ In this case, we're working with simple geometry, so we want to bring the geomet
 > A question that may come up often in Revit/Dynamo workflows: how do I select one element and get all similar elements?  Since the selected Revit element contains all of its hierarchical information, we can query its family type and select all elements of that type.
 1.  Plug the beam element into a *FamilyInstance.Symbol** node.
 2. The *Watch* node reveals that the output is now a family symbol rather than a Revit element.
-3. *FamilyInstance.Symbol* is a simple query, so we can do this in the code block just as easily with ```
-x.Symbol;```
- and get the same results.
+3. *FamilyInstance.Symbol* is a simple query, so we can do this in the code block just as easily with ```x.Symbol;``` and get the same results.
 
 **Note - a family symbol is Revit API terminology for family type. Since this may cause some confusion, it will be updated in upcoming releases.*
 

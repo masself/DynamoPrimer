@@ -36,8 +36,7 @@ The image below is the base graph we will be using to demonstrate basic list ope
 5. Using *code block*, designate a value of ```50;
 ``` for the *radius*.  This is the first circle we'll create.
 6. With a *Geometry.Translate* node, move the circle up 100 units in the Z direction.
-7. With a *code block* node, define a range of ten numbers between 0 and 1 with this line of code: ```0..1..#10;
-```
+7. With a *code block* node, define a range of ten numbers between 0 and 1 with this line of code: ```0..1..#10;```
 8. Plug the code block from the previous step into the *param* input of two *Curve.PointAtParameter* nodes.  Plug *Circle.ByPlaneRadius* into the curve input of the top node, and *Geometry.Translate* into the curve input of the node beneath it.
 9. Using a *Line.ByStartPointEndPoint*, connect the two *Curve.PointAtParameter *nodes.
 
@@ -73,8 +72,7 @@ The image below is the base graph we will be using to demonstrate basic list ope
 >Download the example file that accompanies this exercise (Right click and "Save Link As..."): [List-Reverse.dyn](datasets/6-2/List-Reverse.dyn). A full list of example files can be found in the Appendix.
 
 ![Exercise](images/6-2/Exercise/34.png)
->1. To properly visualize the reversed list of lines, create more lines by changing the code block to ```0..1..#100;
-```
+>1. To properly visualize the reversed list of lines, create more lines by changing the code block to ```0..1..#100;```
 2. Insert a *List.Reverse* node in between *Curve.PointAtParameter* and *Line.ByStartPointEndPoint* for one of the list of points.
 3. The *Watch3D* nodes show two different results. The first one shows the result without a reversed list. The lines connect vertically to neighboring points. The reversed list, however, will connect all of the points to the opposing order in the other list.
 

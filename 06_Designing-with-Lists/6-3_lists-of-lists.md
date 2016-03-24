@@ -28,7 +28,8 @@ The fundamental concept to learn from this section: **Dynamo treats lists as obj
 >Download the example file that accompanies this exercise (Right click and "Save Link As..."): [Top-Down-Hierarchy.dyn](datasets/6-3/Top-Down-Hierarchy.dyn). A full list of example files can be found in the Appendix.
 
 ![top-down](images/6-3/top-down.png)
->1. With *code block*, we've defined two ranges:```
+>1. With *code block*, we've defined two ranges:
+```
 0..2;
 0..3;
 ```
@@ -43,7 +44,8 @@ Flatten removes all tiers of data from a data structure. This is helpful when th
 >Download the example file that accompanies this exercise (Right click and "Save Link As..."): [Flatten.dyn](datasets/6-3/Flatten.dyn). A full list of example files can be found in the Appendix.
 
 ![Exercise](images/6-3/Exercise/Flatten-31.png)
-> 1. Insert one line of code to define a range in *code block*:```
+> 1. Insert one line of code to define a range in *code block*:
+```
 -250..-150..#4;
 ```
 2. Plugging the *code block* into the *x* and *y* input of a *Point.ByCoordinates* node, we set the lacing to *"Cross Product"* to get a grid of points.
@@ -193,8 +195,7 @@ This exercise uses some of the logic established in the previous one to edit a s
 ![Exercise](images/6-3/Exercise/B/05.png)
 > In this step,  we want to query the central point in the grid we've created.  To do this we'll select the middle point in the middle list.  Makes sense, right?
 1. To confirm that this is the correct point, we can also click through the watch node items to confirm that we're targeting the correct one.
-2. Using *code block*, we'll write a basic line of code for querying a list of lists:
-```points[1][2];```
+2. Using *code block*, we'll write a basic line of code for querying a list of lists:```points[1][2];```
 3. Using *Geometry.Translate*, we'll move the selected point up in the *Z* direction by *20* units.
 
 ![Exercise](images/6-3/Exercise/B/04.png)

@@ -19,7 +19,7 @@
 | ![](../images/icons/DSCore-Math-GoldenRatio-Large.png) | phi | Math.GoldenRatio | none | double |
 
 
-**φ: The Golden Ratio - **Another irrational constant, the golden ratio defines that two quantities are in the golden ratio if their ratio is the same as the ratio of their sum to the larger of the two quantities.  This ratio appears often in geometry and biological systems, and is considered for a wide-range of applications ranging from the practical to the aesthetic. A rounded value for *φ* is *1.61804*.
+**φ: The Golden Ratio -** Another irrational constant, the golden ratio defines that two quantities are in the golden ratio if their ratio is the same as the ratio of their sum to the larger of the two quantities.  This ratio appears often in geometry and biological systems, and is considered for a wide-range of applications ranging from the practical to the aesthetic. A rounded value for *φ* is *1.61804*.
 
 ## Arithmetic Operators
 Operators are a set of components that use
@@ -66,8 +66,7 @@ actions on a set of numbers. These can be found under Operators>Actions.
 | --- | --- | --- | --- | --- |
 | ![](../images/icons/mod-Large.png) | Modulo | % | var[]...[],var[]...[] | var[]...[] |
 
-```
-11 % 6 = 5 (6 goes into 11 once, and has a remainder, or modulo, of 5)```
+```11 % 6 = 5 (6 goes into 11 once, and has a remainder, or modulo, of 5)```
 
 While this may not seem like much, the modulo is a great tool for creating patterns.  The image below demonstrates how quickly one can parse out even and odd numbers with pure operations:
 ![](images/4-2/4-2-2/mod1.png)
@@ -79,20 +78,16 @@ While this may not seem like much, the modulo is a great tool for creating patte
 | ![](../images/icons/DSCore-Math-Ceiling-Large.png) | Ceiling | Math.Ceiling | number | int |
 | ![](../images/icons/DSCore-Math-Floor-Large.png) | Floor | Math.Floor | number | int |
 | ![](../images/icons/DynamoUnits-SIUnit-Round-Large.png) | Round | Math.Round | number | int |
-```
-11/6 = 1.833```
+```11/6 = 1.833```
 
 The floor represents the lower bound of the integer within the decimal range.
-```
-Floor(11/6) = Floor(1.833) = 1```
+```Floor(11/6) = Floor(1.833) = 1```
 
 The ceiling represents the upper bound.
-```
-Ceil(11/6) = Ceil(1.833) = 2```
+```Ceil(11/6) = Ceil(1.833) = 2```
 
 The round operations will 'round' to the closest number in the range.
-```
-Round(11/6) = Round(1.833) = 2```
+```Round(11/6) = Round(1.833) = 2```
 
 ## Functions
 **Remap Range -**This is one of the most important functions in parametric modeling.  The component maps a set of values in one domain into another domain, while maintaining the same distribution ratio.
