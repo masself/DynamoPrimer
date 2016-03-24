@@ -30,7 +30,7 @@ The step above has created a list of numbers to define the parametric domain.  T
 3. **Math.RadiansToDegrees:** The '*t*' values need to be translated to degrees for their evaluation in the trigonometric functions.  Remember, Dynamo defaults to degrees for evaluating these functions.
 4. **Math.Pow:** as a function of the '*t*' and the number '*e*' this creates the Fibonacci sequence.
 5. **Math.Cos and Math.Sin:**  These two trigonmetric functions will differentiate the x-coordinate and the y-coordinate, respectively, of each parametric point.
-6.  **Watch: ** We now see that our output is two lists, these will be the *x* and *y* coordinates of the points used to generate the spiral.
+6.  **Watch:** We now see that our output is two lists, these will be the *x* and *y* coordinates of the points used to generate the spiral.
 
 ###From Formula to Geometry
 Now, the bulk of Nodes from the previous step will work fine, but it is a lot of work.  To create a more efficient workflow, have a look at **Code Blocks** (section 3.3.2.3) to define a string of Dynamo expressions into one node.  In this next series of steps, we'll look at using the parametric equation to draw the Fibonacci spiral.
