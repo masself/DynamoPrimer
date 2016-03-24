@@ -54,7 +54,7 @@ Core
 
 ####Core.Input
 ||||
-|--|--|--|
+|---|---|---|
 ||ACTIONS||
 |![IMAGE](images/A-2/DSCoreNodesUI.BoolSelector.Large.png)|**Boolean**<br>Selection between a true and false.|![IMAGE](images/nodes/Boolean.png)
 |![IMAGE](images/A-2/Dynamo.Nodes.CodeBlockNodeModel.Large.png)|**Code Block**<br>Allows for DesignScript code to be authored directly.|![IMAGE](images/nodes/CodeBlock.png)
@@ -67,7 +67,7 @@ Core
 
 ####Core.List
 ||||
-|--|--|--|
+|---|---|---|
 ||CREATE||
 |![IMAGE](images/A-2/DSCore.List.Create.Large.png)|**List.Create**<br>Makes a new list out of the given inputs.|![IMAGE](images/nodes/List.Create.png)
 |![IMAGE](images/A-2/DSCore.List.Combine.Large.png)|**List.Combine**<br>Applies a combinator to each element in two sequences|![IMAGE](images/nodes/List.Combine.png)
@@ -88,7 +88,7 @@ Core
 
 ####Core.Logic
 ||||
-|--|--|--|
+|---|---|---|
 ||ACTIONS||
 |![IMAGE](images/A-2/DSCoreNodesUI.Logic.If.Large.png)|**If**<br>Conditional statement. Checks the boolean value of the test input. If the test input is true, the result outputs the true input, otherwise the result outputs the false input.|![IMAGE](images/nodes/If.png)
 
@@ -115,7 +115,7 @@ Core
 
 ####Core.Scripting
 ||||
-|--|--|--|
+|---|---|---|
 ||ACTIONS||
 |![IMAGE](images/A-2/DSCore.Scripting.Formula.Large.png)|**Formula**<br>Evaluates mathematical formulas. Uses NCalc for evaluation. See http://ncalc.codeplex.com |![IMAGE](images/nodes/Formula.png)
 
@@ -132,7 +132,7 @@ Core
 
 ####Core.View
 ||||
-|--|--|--|
+|---|---|---|
 ||ACTIONS||
 |![IMAGE](images/A-2/Dynamo.Nodes.Watch.Large.png)|**View.Watch**<br>Visualize the output of node.|![IMAGE](images/nodes/Watch.png)
 |![IMAGE](images/A-2/Dynamo.Nodes.Watch3D.Large.png)|**View.Watch 3D**<br>Shows a dynamic preview of geometry.|![IMAGE](images/nodes/Watch3D.png)
@@ -142,7 +142,7 @@ Geometry
 
 ####Geometry.Circle
 ||||
-|--|--|--|
+|---|---|---|
 ||CREATE||
 |![IMAGE](images/A-2/Autodesk.DesignScript.Geometry.Circle.ByCenterPointRadius.Large.png)|**Circle.ByCenterPointRadius**<br>Creates a Circle with input center Point and radius in the world XY plane, with world Z as normal.|![IMAGE](images/nodes/Circle.ByCenterPointRadius.png)
 |![IMAGE](images/A-2/Autodesk.DesignScript.Geometry.Circle.ByPlaneRadius.Large.png)|**Circle.ByPlaneRadius**<br>Create a Circle centered at the input Plane origin (root), lying in the input Plane, with given radius.|![IMAGE](images/nodes/Circle.ByPlaneRadius.png)
@@ -199,14 +199,14 @@ Geometry
 
 ####Geometry.NurbsSurface
 ||||
-|--|--|--|
+|---|---|---|
 ||Create||
 |![IMAGE](images/A-2/Autodesk.DesignScript.Geometry.NurbsSurface.ByControlPoints.Large.png)|**NurbsSurface.ByControlPoints**<br>Create a NurbsSurface by using explicit control Points with specified U and V degrees.|![IMAGE](images/nodes/NurbsSurface.ByControlPoints.png)
 |![IMAGE](images/A-2/Autodesk.DesignScript.Geometry.NurbsSurface.ByPoints.Large.png)|**NurbsSurface.ByPoints**<br>Creates a NurbsSurface with specified interpolated points and U and V degrees. The resultant surface will pass through all of the points.|![IMAGE](images/nodes/NurbsSurface.ByPoints.png)
 
 ####Geometry.Plane
 ||||
-|--|--|--|
+|---|---|---|
 ||CREATE||
 |![IMAGE](images/A-2/Autodesk.DesignScript.Geometry.Plane.ByOriginNormal.Large.png)|**Plane.ByOriginNormal**<br>Create a Plane centered at root Point, with input normal Vector.|![IMAGE](images/nodes/Plane.ByOriginNormal.png)
 |![IMAGE](images/A-2/Autodesk.DesignScript.Geometry.Plane.XY.Large.png)|**Plane.XY**<br>Creates a plane in the world XY|![IMAGE](images/nodes/Plane.XY.png)
