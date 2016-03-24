@@ -56,7 +56,7 @@ There are a few basic shorthand methods in the code block which, simply put, mak
 
 ###Additional Syntax
 | Node(s) | Code Block Equivalent | Note |
-| -- | -- | -- |
+| --- | --- | --- |
 | Any operator (+, &&, >=, Not, etc.) |+, &&, >=, !, etc.| Note that “Not” becomes “!” but the node is called “Not” to distinguish from “Factorial”|
 | Boolean True | true; | Note lower case |
 | Boolean False | false; | Note lower case |
