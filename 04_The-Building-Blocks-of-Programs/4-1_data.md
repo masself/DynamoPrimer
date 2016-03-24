@@ -14,7 +14,7 @@ Data is a set of values of qualitative or quantitative variables. The simplest f
 The ```'null'``` type represents the absence of data. While this is an abstract concept, you will likely come across this while working with Visual Programming. If an action doesn't create a valid result, the Node will return a null. Testing for nulls and removing nulls from data structure is a crucial part to creating robust programs.
 
 | Icon | Name/Syntax | Inputs | Outputs |
-| -- | -- | -- | -- | -- | -- |
+| --- | --- | --- | --- |
 | ![](../images/icons/DSCore-Object-IsNull-Large.png) | Object.IsNull | obj | bool |
 
 ###Data Structures
@@ -57,7 +57,7 @@ In this first example, we assemble a shelled cylinder which walks through the ge
 
 ![](images/4-1/6.png)
 > 1. **Number Slider -** Rather than using the default values for all of these inputs, let's add some parametric control to the model.
-2. **Domain Edit - ** after adding the number slider to the canvas, click the caret in the top left to reveal the domain options.
+2. **Domain Edit -** after adding the number slider to the canvas, click the caret in the top left to reveal the domain options.
 3. **Min/Max/Step -** change the *min*, *max*, and *step* values to *0*,*2*, and *0.01* respectively. We are doing this to control the size of the overall geometry.
 
 ![](images/4-1/7.png)
