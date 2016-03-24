@@ -75,7 +75,8 @@ At this point, we've created an awesome thickening cylinder thing.  This is one 
 
 ![](images/4-1/10.png)
 > This step is more involved so let's walk through it slowly: the end goal is to create a list of numbers which define the locations of each cylinder in a row.
-1. **Multiplication -** First, we want to multiply the value from the previous step by 2. The value from the previous step represents a radius, and we want to move the cylinder the full diameter.
+
+> 1. **Multiplication -** First, we want to multiply the value from the previous step by 2. The value from the previous step represents a radius, and we want to move the cylinder the full diameter.
 2. **Number Sequence -** we create an array of numbers with this node.  The first input is the *multiplication* node from the previous step into the *step* value.  The *start* value can be set to *0.0* using a *number* node.
 3.  **Integer Slider - ** For the *amount* value, we connect an integer slider. This will define how many cylinders are created.
 4. **Output - ** This list shows us the distance moved for each cylinder in the array, and is parametrically driven by the original sliders.
