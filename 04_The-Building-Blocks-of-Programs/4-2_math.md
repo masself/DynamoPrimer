@@ -26,7 +26,7 @@ The step above has created a list of numbers to define the parametric domain.  T
 > When stepping through the group of Nodes, try to pay attention to the parallel between the visual program and written equation.
 
 > 1. **Number Slider:** Add two number sliders to the canvas.  These sliders will represent the *a* and the *b* variables of the parametric equation.  These represent a constant which is flexible, or parameters which we can adjust towards a desired outcome.
-2. * The multiplication Node is represented by an aseterisk.  We'll use this repeatedly to connect multiplying variables
+2. ** Multiply (*)** The multiplication Node is represented by an aseterisk.  We'll use this repeatedly to connect multiplying variables
 3. **Math.RadiansToDegrees:** The '*t*' values need to be translated to degrees for their evaluation in the trigonometric functions.  Remember, Dynamo defaults to degrees for evaluating these functions.
 4. **Math.Pow:** as a function of the '*t*' and the number '*e*' this creates the Fibonacci sequence.
 5. **Math.Cos and Math.Sin:**  These two trigonmetric functions will differentiate the x-coordinate and the y-coordinate, respectively, of each parametric point.
