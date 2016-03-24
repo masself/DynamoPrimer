@@ -5,12 +5,14 @@ Let's add one more tier to the hierarchy.  If we take the deck of cards from the
 > Photo by [Dori](https://commons.wikimedia.org/wiki/File:Stack_of_coins_0214.jpg).
 
 What **queries** can we make from the list of lists? This accesses existing properties.
+
 * Number of coin types? 2.
 * Coin type values? $0.01 and $0.25.
 * Material of quarters? 75% copper and 25% nickel.
 * Material of pennies? 97.5% zinc and 2.5% copper.
 
 What **actions** can we perform on the list of lists? This changes the list of lists based on a given operation.
+
 * Select a specific stack of quarters or pennies.
 * Select a specific quarter or penny.
 * Rearrange the stacks of quarters and pennies.

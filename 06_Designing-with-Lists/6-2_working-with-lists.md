@@ -5,6 +5,7 @@ Now that we've established what a list is, let's talk about operations we can pe
 > Photo by [Christian Gidlöf](https://commons.wikimedia.org/wiki/File:Playing_cards_modified.jpg)
 
 What **queries** can we make from the list? This accesses existing properties.
+
 * Number of cards in the deck? 52.
 * Number of suits? 4.
 * Material? Paper.
@@ -12,6 +13,7 @@ What **queries** can we make from the list? This accesses existing properties.
 * Width? 2.5" or 64mm.
 
 What **actions** can we perform on the list? This changes the list based on a given operation.
+
 * We can shuffle the deck.
 * We can sort the deck by value.
 * We can sort the deck by suit.
