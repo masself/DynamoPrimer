@@ -112,14 +112,14 @@ In this exercise, we will flex our new shorthand skills to create a funky-cool e
 
 ![Exercise](images/7-3/Exercise/11.png)
 > In this step, we employ our first function to move the grid of points up in the Z.  This grid will drive a generated surface based on the underlying function.
-1. Add the visual nodes to the canvas as shown in the image above.
+
+> 1. Add the visual nodes to the canvas as shown in the image above.
 2. Rather than using a formula node, we use a code block with the line: ```(0..Math.Sin(x*360)..#50)*5;
 ```.  To quickly break this down, we're defining a range with a formula inside of it.  This formula is the Sine function. The sine function receives degree inputs in Dynamo, so in order to get a full sine wave, we multiple our *x* values (this is the range input from 0 to 1) by *360*.  Next we want the same number of divisions as control grid points for each row, so we define fifty subdivisions with *#50*.  Finally, the multiplier of 5 simply increases the amplitude of translation so that we can see the effect in the Dynamo Preview.
 
 
 ![Exercise](images/7-3/Exercise/06.png)
-> 1. While the previous code block worked fine, it wasn't completely parametric.  We want to dynamically drive its parameters, so we'll replace the line from the previous step with ```(0..Math.Sin(x*360*cycles)..#List.Count(x))*amp;
-```.  This gives us the ability to define these values based on inputs.
+> 1. While the previous code block worked fine, it wasn't completely parametric.  We want to dynamically drive its parameters, so we'll replace the line from the previous step with ```(0..Math.Sin(x*360*cycles)..#List.Count(x))*amp;``` .  This gives us the ability to define these values based on inputs.
 
 ![Exercise](images/7-3/Exercise/10.png)
 >1. By changing the sliders (ranging from 0 to 10), we get some interesting results.
@@ -149,7 +149,8 @@ In this exercise, we will flex our new shorthand skills to create a funky-cool e
 
 ![Exercise](images/7-3/Exercise/00.png)
 > Looking at the resultant visual graph, we can highlight the code blocks and see each of their functions.
-1. The first code block replaces the *Number* node.
+
+> 1. The first code block replaces the *Number* node.
 2. The second code block replaces the *Number Range* node.
 3. The third code block replaces the *Formula* node (as well as *List.Transpose*, *List.Count* and *Number Range*).
 4. The fourth code block queries a list of lists, replacing the *List.GetItemAtIndex* node.

@@ -42,11 +42,10 @@ This exercise focuses on editing Revit elements without performing geometric ope
 ```{"BldgWidth","BldgLength","BldgHeight", "AtriumOffset", "InsideOffset","LiftUp"};```
 
 ![Exercise](images/8-3/Exercise/31.png)
-> 1. We also want to designate values for each parameter.  Add six *"integer sliders"* to the canvas and rename to the corresponding parameter in the list.  Also, set the values of each slider to the image above.  In order from top-to-bottom:
-```62,92,25,22,8,12```
-2. Define another *code block* with a list of the same length as the parameter names.  In this case, we name variables (without quotes) which create inputs for the *code block.*  Plug the *sliders* into each respective input:
-```{bw,bl,bh,ao,io.lu};```
-3. Connect the *code block *to the *"Element.SetParameterByName*"* node.  With run automatically checked, we will automatically see results.
+> 1. We also want to designate values for each parameter.  Add six *"integer sliders"* to the canvas and rename to the corresponding parameter in the list.  Also, set the values of each slider to the image above.  In order from top-to-bottom:  ```62,92,25,22,8,12```
+2. Define another *code block* with a list of the same length as the parameter names.  In this case, we name variables (without quotes) which create inputs for the *code block.*
+Plug the *sliders* into each respective input:```{bw,bl,bh,ao,io.lu};```
+3. Connect the *code block* to the "Element.SetParameterByName*" node.  With run automatically checked, we will automatically see results.
 
 **Note - this demonstration works with instance parameters, but not type parameters.*
 
@@ -56,16 +55,12 @@ Just as in Revit, many of these parameters are dependent on each other.  There a
 ```100,92,100,25,13,51.4```
 
 ![Exercise](images/8-3/Exercise/30.png)
-> 1. Let's copy the graph and focus on the facade glazing which will house the truss system.  We isolate four parameters in this case:
-``` {"DblSkin_SouthOffset","DblSkin_MidOffset","DblSkin_NorthOffset","Facade Bend Location"};```
-2. Additionally, we create *number sliders* and rename to the appropriate parameters.  The first three sliders from top-to-bottom should be remapped to a domain of [0,10], while the final slider, *"Facade Bend Location"*, should be remapped to a domain of [0,1].  These values, from top-to-bottom should start with these values (although they're arbitrary):
-```2.68,2.64,2.29,0.5```
-3. Define a new *code block *and connect the sliders:
-```{so,mo,no,fbl};```
+> 1. Let's copy the graph and focus on the facade glazing which will house the truss system.  We isolate four parameters in this case: ``` {"DblSkin_SouthOffset","DblSkin_MidOffset","DblSkin_NorthOffset","Facade Bend Location"};```
+2. Additionally, we create *number sliders* and rename to the appropriate parameters.  The first three sliders from top-to-bottom should be remapped to a domain of [0,10], while the final slider, *"Facade Bend Location"*, should be remapped to a domain of [0,1].  These values, from top-to-bottom should start with these values (although they're arbitrary): ```2.68,2.64,2.29,0.5```
+3. Define a new *code block* and connect the sliders: ```{so,mo,no,fbl};```
 
 
 
 ![Exercise](images/8-3/Exercise/00.png)
-> 1. By changing the *sliders* in this part of the graph, we can make the facade glazing much more substantial:
-```9.98,10.0,9.71,0.31```
+> 1. By changing the *sliders* in this part of the graph, we can make the facade glazing much more substantial: ```9.98,10.0,9.71,0.31```
 

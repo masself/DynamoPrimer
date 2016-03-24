@@ -33,10 +33,10 @@ The color range is similar to the **Remap Range** Node from section 4.2: it rema
 The current Node works well, but it can be a little awkward to get everything working the first time around. The best way to become familiar with the color gradient is to test it out interactively. Let's do a quick exercise to review how to setup a gradient with output colors corresponding to numbers.
 
 ![](images/4-5/range.png)
->1. **Define three colors: ** Using a code block node, define *red, green*, and *blue* by plugging in the appropriate combinations of *0* and *255*.
+>1. **Define three colors:** Using a code block node, define *red, green*, and *blue* by plugging in the appropriate combinations of *0* and *255*.
 2. **Create list:** Merge the three colors into one list.
-3. **Define Indices: ** Create a list to define the grip positions of each color (ranging from 0 to 1).  Notice the value of 0.75 for green.  This places the green color 3/4 of the way across the horizontal gradient in the color range slider.
-4. **Code Block: ** Input values (between 0 and 1) to translate to colors.
+3. **Define Indices:** Create a list to define the grip positions of each color (ranging from 0 to 1).  Notice the value of 0.75 for green.  This places the green color 3/4 of the way across the horizontal gradient in the color range slider.
+4. **Code Block:** Input values (between 0 and 1) to translate to colors.
 
 ### Color Preview
 The **Display.ByGeometry** Node gives us the ability to color geometry in the Dynamo viewport.  This is helpful for separating different types of geometry, demonstrating a parametric concept, or defining an analysis legend for simulation.  The inputs are simple: geometry and color. To createa a gradient like the image above, the color input is connected to the **color range** Node.

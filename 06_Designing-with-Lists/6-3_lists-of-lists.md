@@ -137,7 +137,8 @@ In this exercise, we'll use a similar logic to List.Map, but with multiple eleme
 
 ![Exercise](images/6-3/Exercise/Combine-30.png)
 > By using *List.Combine*, we can successfully divide each line by the given ranges.  This gets a little tricky, so we'll break it down in-depth.
-1. First, add a *Curve.PointAtParameter* node to the canvas.  This will be the *"function" *or *"combinator"* that we apply to *List.Combine* node. More on that in a second.
+
+> 1. First, add a *Curve.PointAtParameter* node to the canvas.  This will be the *"function" *or *"combinator"* that we apply to *List.Combine* node. More on that in a second.
 2. Add a *List.Combine* node to the canvas.  Hit the *"+"* or *"-"* to add or subtract inputs. In this case, we'll use the default two inputs on the node.
 3. We want to plug the *Curve.PointAtParameter* node into the *"comb"* input of *List.Combine*. And one more important node: be sure to right-click the *"param" *input of *Curve.PointAtParameter* and uncheck *"use default value"*. Default values in Dynamo inputs have to be removed when running a node as a function.  In other words, we should consider default values as having additional nodes wired to them.  Because of this, we need to remove the default values in this case.
 4. We know we have two inputs, the lines and the parameters to create points. But how do we connect them to the *List.Combine* inputs and in what order?
@@ -155,7 +156,8 @@ Transpose is a fundamental function when dealing with lists of lists. Just as in
 
 ![Exercise](images/6-3/Exercise/A/02.png)
 > Let's delete the *List.Count* nodes from the previous exercise and move on to some geometry to see how the data structured.
-1. Connect a *PolyCurve.ByPoints* to the output of the watch node from *Point.ByCoordinates*.
+
+> 1. Connect a *PolyCurve.ByPoints* to the output of the watch node from *Point.ByCoordinates*.
 2. The output shows 5 polycurves, and we can see the curves in our Dynamo preview.  The Dynamo node is looking for a list of points (or a list of lists of points in this case) and creating a single polycurve from them.  Essentially, each list has converted to a curve in the data structure.
 
 ![Exercise](images/6-3/Exercise/A/01.png)
@@ -205,19 +207,22 @@ This exercise uses some of the logic established in the previous one to edit a s
 
 ![Exercise](images/6-3/Exercise/B/03.png)
 > So far we've successfully queried the center point and moved it upward.  Now we want need to insert this moved point back into the original data structure.
-1. First, we want to replace the item of the list we isolated in a previous step.
+
+> 1. First, we want to replace the item of the list we isolated in a previous step.
 2. Using *List.ReplaceItemAtIndex*, we'll replace the middle item by using and index of *"2"*, with the replacement item connected to the moved point (*Geometry.Translate*).
 3. The output shows that we've input the moved point into the middle item of the list.
 
 ![Exercise](images/6-3/Exercise/B/02.png)
 > Now that we've modified the list, we need to insert this list back into the original data structure: the list of lists.
-1. Following the same logic, use *List.ReplaceItemAtIndex* to replace the middle list with the our modified list.
+
+> 1. Following the same logic, use *List.ReplaceItemAtIndex* to replace the middle list with the our modified list.
 2. Notice that the *code blocks* defining the index for these two nodes are 1 and 2, which matches the original query from the *code block* (*points[1][2]*).
 3. By selecting the list at *index 1*, we see the data structure highlighted in the Dynamo preview.  We successfully merged the moved point into the original data structure.
 
 ![Exercise](images/6-3/Exercise/B/01.png)
 > There are many ways to make a surface from this set of points.  In this case, we're going to create a surface by lofting curves together.
-1. Create a *NurbsCurve.ByPoints* node and connect the new data structure to create three nurbs curves.
+
+> 1. Create a *NurbsCurve.ByPoints* node and connect the new data structure to create three nurbs curves.
 
 ![Exercise](images/6-3/Exercise/B/00.png)
 > 1. Connect a *Surface.ByLoft* to the output from *NurbsCurve.ByPoints*.  We now have a modified surface.  We can change the original *Z* value of Geometry. Translate and watch the geometry update!
