@@ -57,7 +57,7 @@ In this first example, we assemble a shelled cylinder which walks through the ge
 
 ![](images/4-1/6.png)
 > 1. **Number Slider -** Rather than using the default values for all of these inputs, let's add some parametric control to the model.
-2. **Domain Edit - **after adding the number slider to the canvas, click the caret in the top left to reveal the domain options.
+2. **Domain Edit - ** after adding the number slider to the canvas, click the caret in the top left to reveal the domain options.
 3. **Min/Max/Step -** change the *min*, *max*, and *step* values to *0*,*2*, and *0.01* respectively. We are doing this to control the size of the overall geometry.
 
 ![](images/4-1/7.png)
@@ -78,8 +78,8 @@ At this point, we've created an awesome thickening cylinder thing.  This is one 
 
 > 1. **Multiplication -** First, we want to multiply the value from the previous step by 2. The value from the previous step represents a radius, and we want to move the cylinder the full diameter.
 2. **Number Sequence -** we create an array of numbers with this node.  The first input is the *multiplication* node from the previous step into the *step* value.  The *start* value can be set to *0.0* using a *number* node.
-3.  **Integer Slider - ** For the *amount* value, we connect an integer slider. This will define how many cylinders are created.
-4. **Output - ** This list shows us the distance moved for each cylinder in the array, and is parametrically driven by the original sliders.
+3. **Integer Slider -** For the *amount* value, we connect an integer slider. This will define how many cylinders are created.
+4. **Output -** This list shows us the distance moved for each cylinder in the array, and is parametrically driven by the original sliders.
 
 ![](images/4-1/11.png)
 > 1. This step is simple enough - plug the sequence defined in the previous step into the *x* input of the original *Point.ByCoordinates*.  This will replace the slider *pointX* which we can delete. We now see an array of cylinders in the viewport (make sure the integer slider is larger than 0).
