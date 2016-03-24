@@ -43,16 +43,14 @@ actions on a set of numbers. These can be found under Operators>Actions.
 | Icon | Name | Syntax| Inputs | Outputs |
 | --- | --- | --- | --- | --- |
 | ![](../images/icons/DSCore-Math-Pow-Large.png) | Power | Math.Pow | number, power | var[]...[] |
-```
-2 ^ 3 = 2 x 2 x 2 = 8```
+```2 ^ 3 = 2 x 2 x 2 = 8```
 
-**Square Root - **The square root of x referes to the number z such that z^2=x.  This operator is commonplace in a wide-range of geometric applications, most notably the [Pythagorean Theorem](http://en.wikipedia.org/wiki/Pythagorean_theorem).
+**Square Root -** The square root of x referes to the number z such that z^2=x.  This operator is commonplace in a wide-range of geometric applications, most notably the [Pythagorean Theorem](http://en.wikipedia.org/wiki/Pythagorean_theorem).
 
 | Icon | Name | Syntax| Inputs | Outputs |
 | --- | --- | --- | --- | --- |
 | ![](../images/icons/DSCore-Math-Sqrt-Large.png) | Square Root | Math.Sqrt | number | double |
-```
-Sqrt(4) = 2```
+```Sqrt(4) = 2```
 
 **Absolute Value -**The absolute value of a number refers to its non-negative value. This operator comes in handy when parametrically, especially when a calculation concerns itself with scalar values rather than vectors (ie speed vs. velocity).
 
@@ -60,8 +58,7 @@ Sqrt(4) = 2```
 | --- | --- | --- | --- | --- |
 | ![](../images/icons/DSCore-Math-Abs-double-Large.png) | Absolute Value | Math.Abs | number | double |
 
-```
-|-10| = 10 and |10| = 10```
+```|-10| = 10 and |10| = 10```
 
 **Modulo -** The modulo operation refers to the remainder after a division.
 
